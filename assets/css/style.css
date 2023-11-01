@@ -11,6 +11,12 @@ body {
     font-family: "Playpen Sans", "Lato";
 }
 
+/* Style for headings */
+h2 {
+    font-size: smaller;
+    margin-bottom: 20px;
+}
+
 /* Styles for numbers divs in the game area */
 .numbers-game-div {
     max-width: 660px;
