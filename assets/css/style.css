@@ -27,3 +27,16 @@ body {
 }
 
 /* Styles for start and reset buttons */
+.game-button {
+    font-size: x-large;
+}
+
+.start-button {
+    margin-right: 8%;
+    padding: 5px 10px;
+}
+
+.reset-button {
+    margin-left: 8%;
+    padding: 5px 10px;
+}
