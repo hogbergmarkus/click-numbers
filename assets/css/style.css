@@ -27,8 +27,3 @@ body {
 }
 
 /* Styles for start and reset buttons */
-.button-span {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-}
