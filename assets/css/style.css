@@ -1,3 +1,4 @@
+/* Styles for Body */
 body {
     background-color: rgb(40, 40, 40);
     color: rgb(233, 229, 215);
@@ -9,6 +10,7 @@ body {
     align-items: center;
 }
 
+/* Styles for numbers divs in the game area */
 .numbers-game-div {
     max-width: 660px;
     display: flex;
@@ -22,4 +24,13 @@ body {
     min-width: 17%;
     padding: 10px 5px;
     margin: 5px;
+}
+
+/* Styles for start and reset buttons */
+.button-span {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    margin: 5px 16%;
+    padding: 10px 5px;
 }
