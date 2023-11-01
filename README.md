@@ -21,6 +21,8 @@ amount of addiction as you are trying to beat your best time.
   - [Website owner and user stories](#website-owner-and-user-stories)
     - [Website owner story](#website-owner-story)
     - [User story](#user-story)
+  - [Design](#design)
+    - [Wireframes](#wireframes)
 
 ## Website owner and user goals
 
@@ -57,3 +59,11 @@ The user is looking for something to pass time, and that something should also
 provide a challenge. It has to be fast and easy to pick up and play wherever they are.
 
 If the game lets them compete against themselves they are sure to come back for more.
+
+## Design
+
+### Wireframes
+
+Here you will find the link to my wireframes from the design phase:
+
+[Wireframes](https://github.com/hogbergmarkus/click-numbers/tree/main/documentation/wireframes)
