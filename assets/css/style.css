@@ -30,7 +30,5 @@ body {
 .button-span {
     display: flex;
     flex-direction: row;
-    justify-content: space-evenly;
-    margin: 5px 16%;
-    padding: 10px 5px;
+    justify-content: space-between;
 }
