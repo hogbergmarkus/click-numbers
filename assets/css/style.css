@@ -8,6 +8,7 @@ body {
     flex-wrap: wrap;
     flex-direction: column;
     align-items: center;
+    font-family: "Playpen Sans", "Lato";
 }
 
 /* Styles for numbers divs in the game area */
