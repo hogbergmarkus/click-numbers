@@ -28,7 +28,8 @@ function clickableDivs() {
 
     for (let div of divs) {
         div.addEventListener('click', function () {
-            alert('You clicked a number-div');
+            let divNumber = parseInt(div.textContent); //Gets the number inside the div clicked
+            alert(`You clicked ${divNumber}`);
         });
     }
 }
