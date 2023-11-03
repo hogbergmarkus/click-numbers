@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function () {
     for (let button of buttons) {
         button.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'start') {
-                alert('You hit the Start button');
+                setInterval(setTimer, 1000); //Start timer function
             } else if (this.getAttribute('data-type') === 'reset') {
                 alert('You hit the reset button');
             } else {
@@ -46,4 +46,16 @@ function randomArray() {
         }
     }
     return array;
+}
+
+/*
+Timer function, starts when Start button is pressed
+I used primarily the documentation from the link below to help with this
+https://www.w3schools.com/jsref/met_win_setinterval.asp
+*/
+let second = 0;
+function setTimer() {
+    let timer = document.getElementById('timer');
+    timer.innerHTML = `Timer: ${second}`;
+    second++;
 }
