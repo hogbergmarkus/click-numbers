@@ -20,6 +20,17 @@ document.addEventListener('DOMContentLoaded', function () {
     }
 });
 
+//Add eventlisteners to the divs with numbers inside, that are used to play game
+function clickableDivs() {
+    let divs = document.getElementsByClassName('number-div');
+
+    for (let div of divs) {
+        div.addEventListener('click', function () {
+            alert('You clicked a number-div');
+        });
+    }
+}
+
 //Creates an array and fills it randomly with numbers 1-16
 function randomArray() {
     let array = [];
