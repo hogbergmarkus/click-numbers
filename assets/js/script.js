@@ -34,13 +34,13 @@ function clickableDivs() {
 
 //Creates an array and fills it randomly with numbers 1-16
 function randomArray() {
-    let array = [];
+    let array = []; //Create an empty array
     while (array.length < 16) {
-        let number = Math.floor(Math.random() * 16) + 1;
+        let number = Math.floor(Math.random() * 16) + 1; //Random numbers 1-16
         if (array.includes(number)) {
-            continue;
+            continue; //If number already exists in array, skip this iteration
         } else {
-            array.push(number);
+            array.push(number); //Push unique number into array
         }
     }
     return array;
