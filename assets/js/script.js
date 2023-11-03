@@ -19,3 +19,17 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 });
+
+//Creates an array and fills it randomly with numbers 1-16
+function randomArray() {
+    let array = [];
+    while (array.length < 16) {
+        let number = Math.floor(Math.random() * 16) + 1;
+        if (array.includes(number)) {
+            continue;
+        } else {
+            array.push(number);
+        }
+    }
+    return array;
+}
