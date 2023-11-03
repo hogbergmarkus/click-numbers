@@ -18,6 +18,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    clickableDivs();
 });
 
 //Add eventlisteners to the divs with numbers inside, that are used to play game
