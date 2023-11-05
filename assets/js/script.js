@@ -46,6 +46,8 @@ function clickableDivs() {
                     div.style.backgroundColor = 'green'; //If number is 1, color background green
                     firstNumber++; //Increment firstNumber by 1
                 }
+            } else {
+                alert('No game is currently running, please press Start!');
             }
         });
     }
