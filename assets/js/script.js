@@ -7,13 +7,17 @@ Functions to start and reset the game will be attached
  */
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
+    let secondsInterval;
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'start') {
-                setInterval(setTimer, 1000); //Start timer function
+                secondsInterval = setInterval(setTimer, 1000); //Start timer function
             } else if (this.getAttribute('data-type') === 'reset') {
-                alert('You hit the reset button');
+                clearInterval(secondsInterval);
+                second = 0; //Set "second" cariable back to 0
+                let timer = document.getElementById('timer');
+                timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
             } else {
                 alert('No game is running, please press "Start"');
             }
@@ -50,7 +54,7 @@ function randomArray() {
 
 /*
 Timer function, starts when Start button is pressed
-I used primarily the documentation from the link below to help with this
+I used the documentation from the link below to help with this
 https://www.w3schools.com/jsref/met_win_setinterval.asp
 */
 let second = 0;
