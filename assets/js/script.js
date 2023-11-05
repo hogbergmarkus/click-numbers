@@ -18,12 +18,14 @@ document.addEventListener('DOMContentLoaded', function () {
                 second = 0; //Set "second" cariable back to 0
                 let timer = document.getElementById('timer');
                 timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
+                addNumToDiv();
             } else {
                 alert('No game is running, please press "Start"');
             }
         });
     }
     clickableDivs();
+    addNumToDiv();
 });
 
 //Add eventlisteners to the divs with numbers inside, that are used to play game
@@ -50,6 +52,20 @@ function randomArray() {
         }
     }
     return array;
+}
+
+/** 
+ * Uses the function randomArray to get random numbers.
+ * Then pupulates number-div in html with those numbers.
+ * Used on DOM load, and when reset button is used.
+*/
+function addNumToDiv() {
+    let divs = document.getElementsByClassName('number-div');
+    numbers = randomArray(); //Function that generats array with random, unique numbers 1-16
+
+    for (let i = 0; i < divs.length; i++) {
+        divs[i].textContent = numbers[i]; //Add the numbers from randomArray to each number-div in the html
+    }
 }
 
 /*
