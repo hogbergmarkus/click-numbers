@@ -7,10 +7,10 @@ Start and reset game.
  */
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
-    let secondsInterval;
-    let second = 0;
+    let secondsInterval; //Keep track of timer count
+    let second = 0; //Set displaying time on page
     let timerRunning = false; //Game stopped
-    let firstNumber = 1; //Keeps count of what number is clicked
+    let firstNumber = 1; //Keep count of what number is clicked
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
