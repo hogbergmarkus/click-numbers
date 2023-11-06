@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let timer = document.getElementById('timer');
                 timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
                 timerRunning = false;
+                resetDivs();
                 addNumToDiv();
             } else {
                 alert('No game is running, please press "Start"');
@@ -92,4 +93,15 @@ function setTimer() {
     let timer = document.getElementById('timer');
     timer.innerHTML = `Timer: ${second}`;
     second++;
+}
+
+/**
+ * Set divs back to their original color when game is reset
+ */
+function resetDivs() {
+    let divs = document.getElementsByClassName('number-div');
+
+    for (let div of divs) {
+        div.style.backgroundColor = 'rgb(40, 40, 40)';
+    }
 }
