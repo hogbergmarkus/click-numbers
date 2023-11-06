@@ -8,6 +8,9 @@ Start and reset game.
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
     let secondsInterval;
+    let second = 0;
+    let timerRunning = false; //Game stopped
+    let firstNumber = 1; //Keeps count of what number is clicked
 
     for (let button of buttons) {
         button.addEventListener('click', function () {
@@ -31,8 +34,6 @@ document.addEventListener('DOMContentLoaded', function () {
     //Add eventlisteners to the divs with numbers inside, that are used to play game
     //Main game function
     //click in correct order, and collor correct clicks green
-    let timerRunning = false; //Game stopped
-    let firstNumber = 1; //Keeps count of what number is clicked
     function clickableDivs() {
         let divs = document.getElementsByClassName('number-div');
 
@@ -68,7 +69,6 @@ document.addEventListener('DOMContentLoaded', function () {
     I used the documentation from the link below to help with this
     https://www.w3schools.com/jsref/met_win_setinterval.asp
     */
-    let second = 0;
     function setTimer() {
         let timer = document.getElementById('timer');
         timer.innerHTML = `Timer: ${second}`;
