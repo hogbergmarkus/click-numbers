@@ -20,6 +20,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 let timer = document.getElementById('timer');
                 timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
                 timerRunning = false;
+                firstNumber = 1;
                 resetDivs();
                 addNumToDiv();
             } else {
@@ -30,10 +31,10 @@ document.addEventListener('DOMContentLoaded', function () {
     //Add eventlisteners to the divs with numbers inside, that are used to play game
     //Main game function
     //click in correct order, and collor correct clicks green
-    let timerRunning = false; //Try to get rid of this global variable!!!!!!!!
+    let timerRunning = false;
+    let firstNumber = 1;
     function clickableDivs() {
         let divs = document.getElementsByClassName('number-div');
-        let firstNumber = 1;
 
         for (let div of divs) {
             div.addEventListener('click', function () {
