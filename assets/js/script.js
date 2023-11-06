@@ -17,6 +17,7 @@ document.addEventListener('DOMContentLoaded', function () {
             if (this.getAttribute('data-type') === 'start') {
                 secondsInterval = setInterval(setTimer, 1000); //Start timer function
                 timerRunning = true; //Starts game
+
             } else if (this.getAttribute('data-type') === 'reset') {
                 clearInterval(secondsInterval);
                 second = 0; //Set "second" variable back to 0
@@ -27,13 +28,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
                 //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
                 document.getElementById('start-button').disabled = false; //Enables startbutton when game is reset
+
                 resetDivs();
                 addNumToDiv();
+
             } else {
                 alert('No game is running, please press "Start"');
             }
+
         });
     }
+
     //Add eventlisteners to the divs with numbers inside, that are used to play game
     //Main game function
     //click in correct order, and collor correct clicks green
@@ -48,6 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         div.style.backgroundColor = 'green'; //If number is 1, color background green
                         firstNumber++; //Increment firstNumber by 1
                     } else if (divNumber !== firstNumber) {
+
                         /*
                         setTimeout function was helped by documentation at link below:
                         https://www.w3schools.com/jsref/met_win_settimeout.asp
@@ -57,6 +63,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         setTimeout(function () {
                             alert('Game Over! Press Reset and then Start, to start a new game.');
                         }, 100);
+
                         div.style.backgroundColor = 'red';
                         timerRunning = false; //Stops game
                         clearInterval(secondsInterval); //Stop timer
@@ -64,12 +71,15 @@ document.addEventListener('DOMContentLoaded', function () {
                         //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
                         document.getElementById('start-button').disabled = true; //Disable start button on game over
                     }
+
                 } else {
                     alert('No game is currently running, please press Start!');
                 }
+
             });
         }
     }
+
     /*
     Timer function, starts when Start button is pressed
     I used the documentation from the link below to help with this
@@ -80,6 +90,7 @@ document.addEventListener('DOMContentLoaded', function () {
         timer.innerHTML = `Timer: ${second}`;
         second++;
     }
+
     clickableDivs();
     addNumToDiv();
 });
@@ -87,8 +98,10 @@ document.addEventListener('DOMContentLoaded', function () {
 //Creates an array and fills it randomly with numbers 1-16
 function randomArray() {
     let array = []; //Create an empty array
+
     while (array.length < 16) {
         let number = Math.floor(Math.random() * 16) + 1; //Random numbers 1-16
+
         if (array.includes(number)) {
             continue; //If number already exists in array, skip this iteration
         } else {
