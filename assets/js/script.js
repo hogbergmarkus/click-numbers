@@ -44,6 +44,7 @@ document.addEventListener('DOMContentLoaded', function () {
     Add eventlisteners to the divs with numbers inside, that are used to play game
     Click in correct order, and collor if clicked correct, green
     If clicked in wrong order, red, and game over
+    Game complete
     */
     function clickableDivs() {
         let divs = document.getElementsByClassName('number-div');
@@ -74,11 +75,14 @@ document.addEventListener('DOMContentLoaded', function () {
                         //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
                         document.getElementById('start-button').disabled = true; //Disable start button on game over
 
+                        //Game complete functionality
                     } else {
                         if (firstNumber === 16) {
+
                             setTimeout(function () {
                                 alert('Congratulations, you completetd the game');
                             }, 100);
+
                             div.style.backgroundColor = 'green';
                             timerRunning = false;
                             clearInterval(secondsInterval);
