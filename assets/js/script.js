@@ -26,34 +26,33 @@ document.addEventListener('DOMContentLoaded', function () {
             }
         });
     }
+    //Add eventlisteners to the divs with numbers inside, that are used to play game
+    //Main game function
+    //click in correct order, and collor correct clicks green
+    let timerRunning = false; //Try to get rid of this global variable!!!!!!!!
+    function clickableDivs() {
+        let divs = document.getElementsByClassName('number-div');
+        let firstNumber = 1;
+
+        for (let div of divs) {
+            div.addEventListener('click', function () {
+                if (timerRunning === true) {
+                    let divNumber = parseInt(div.textContent); //Get number from clicked div
+                    if (divNumber === firstNumber) {
+                        div.style.backgroundColor = 'green'; //If number is 1, color background green
+                        firstNumber++; //Increment firstNumber by 1
+                    } else if (divNumber !== firstNumber) {
+                        alert('Gameover');
+                    }
+                } else {
+                    alert('No game is currently running, please press Start!');
+                }
+            });
+        }
+    }
     clickableDivs();
     addNumToDiv();
 });
-
-//Add eventlisteners to the divs with numbers inside, that are used to play game
-//Main game function
-//click in correct order, and collor correct clicks green
-let timerRunning = false; //Try to get rid of this global variable!!!!!!!!
-function clickableDivs() {
-    let divs = document.getElementsByClassName('number-div');
-    let firstNumber = 1;
-
-    for (let div of divs) {
-        div.addEventListener('click', function () {
-            if (timerRunning === true) {
-                let divNumber = parseInt(div.textContent); //Get number from clicked div
-                if (divNumber === firstNumber) {
-                    div.style.backgroundColor = 'green'; //If number is 1, color background green
-                    firstNumber++; //Increment firstNumber by 1
-                } else if (divNumber !== firstNumber) {
-                    alert('Gameover');
-                }
-            } else {
-                alert('No game is currently running, please press Start!');
-            }
-        });
-    }
-}
 
 //Creates an array and fills it randomly with numbers 1-16
 function randomArray() {
