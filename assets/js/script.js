@@ -3,7 +3,7 @@ This piece of code was helped by the Love Maths walkthrough project
 https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/05-tidying-up/01-a-few-last-things/assets/js/script.js
 Add event listeners to Start and Reset buttons on DOM load
 Add event listeners to number divs with clickableDivs function
-Functions to start and reset the game will be attached
+Start and reset game.
  */
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
@@ -13,13 +13,13 @@ document.addEventListener('DOMContentLoaded', function () {
         button.addEventListener('click', function () {
             if (this.getAttribute('data-type') === 'start') {
                 secondsInterval = setInterval(setTimer, 1000); //Start timer function
-                timerRunning = true;
+                timerRunning = true; //Starts game
             } else if (this.getAttribute('data-type') === 'reset') {
                 clearInterval(secondsInterval);
-                second = 0; //Set "second" cariable back to 0
+                second = 0; //Set "second" variable back to 0
                 let timer = document.getElementById('timer');
                 timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
-                timerRunning = false;
+                timerRunning = false; //Stops game
                 firstNumber = 1;
                 resetDivs();
                 addNumToDiv();
@@ -31,8 +31,8 @@ document.addEventListener('DOMContentLoaded', function () {
     //Add eventlisteners to the divs with numbers inside, that are used to play game
     //Main game function
     //click in correct order, and collor correct clicks green
-    let timerRunning = false;
-    let firstNumber = 1;
+    let timerRunning = false; //Game stopped
+    let firstNumber = 1; //Keeps count of what number is clicked
     function clickableDivs() {
         let divs = document.getElementsByClassName('number-div');
 
@@ -54,8 +54,8 @@ document.addEventListener('DOMContentLoaded', function () {
                             alert('Game Over! Press Reset and then Start, to start a new game.');
                         }, 500);
                         div.style.backgroundColor = 'red';
-                        timerRunning = false;
-                        clearInterval(secondsInterval);
+                        timerRunning = false; //Stops game
+                        clearInterval(secondsInterval); //Stop timer
                     }
                 } else {
                     alert('No game is currently running, please press Start!');
