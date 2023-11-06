@@ -53,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function () {
                         */
                         setTimeout(function () {
                             alert('Game Over! Press Reset and then Start, to start a new game.');
-                        }, 500);
+                        }, 100);
                         div.style.backgroundColor = 'red';
                         timerRunning = false; //Stops game
                         clearInterval(secondsInterval); //Stop timer
