@@ -87,6 +87,7 @@ document.addEventListener('DOMContentLoaded', function () {
                             timerRunning = false;
                             clearInterval(secondsInterval);
                             document.getElementById('start-button').disabled = true;
+                            bestTime();
                         }
                     }
 
@@ -151,5 +152,22 @@ function resetDivs() {
 
     for (let div of divs) {
         div.style.backgroundColor = 'rgb(40, 40, 40)';
+    }
+}
+
+/**
+ * Get time on timer when game is completed
+ * Add it to Your best time in html if time is shorter or 0
+ * Found slice method in notes from the javascript course
+ */
+function bestTime() {
+    let time = document.getElementById('timer').textContent;
+    let newTime = parseInt(time.slice(7)); //Extract the number of seconds from timer
+    let bestTime = document.getElementById('best-time');
+    let bestTimeValue = parseInt(bestTime.textContent.slice(16)); //Extract number from best time
+
+    //Compare extracted numbers and update Your best time
+    if (newTime < bestTimeValue || bestTimeValue === 0) {
+        bestTime.textContent = `Your best time: ${newTime} seconds`;
     }
 }
