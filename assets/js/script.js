@@ -24,6 +24,9 @@ document.addEventListener('DOMContentLoaded', function () {
                 timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
                 timerRunning = false; //Stops game
                 firstNumber = 1;
+
+                //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+                document.getElementById('start-button').disabled = false; //Enables startbutton when game is reset
                 resetDivs();
                 addNumToDiv();
             } else {
@@ -57,6 +60,9 @@ document.addEventListener('DOMContentLoaded', function () {
                         div.style.backgroundColor = 'red';
                         timerRunning = false; //Stops game
                         clearInterval(secondsInterval); //Stop timer
+
+                        //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+                        document.getElementById('start-button').disabled = true; //Disable start button on game over
                     }
                 } else {
                     alert('No game is currently running, please press Start!');
