@@ -63,6 +63,17 @@ document.addEventListener('DOMContentLoaded', function () {
             });
         }
     }
+    /*
+    Timer function, starts when Start button is pressed
+    I used the documentation from the link below to help with this
+    https://www.w3schools.com/jsref/met_win_setinterval.asp
+    */
+    let second = 0;
+    function setTimer() {
+        let timer = document.getElementById('timer');
+        timer.innerHTML = `Timer: ${second}`;
+        second++;
+    }
     clickableDivs();
     addNumToDiv();
 });
@@ -93,18 +104,6 @@ function addNumToDiv() {
     for (let i = 0; i < divs.length; i++) {
         divs[i].textContent = numbers[i]; //Add the numbers from randomArray to each number-div in the html
     }
-}
-
-/*
-Timer function, starts when Start button is pressed
-I used the documentation from the link below to help with this
-https://www.w3schools.com/jsref/met_win_setinterval.asp
-*/
-let second = 0;
-function setTimer() {
-    let timer = document.getElementById('timer');
-    timer.innerHTML = `Timer: ${second}`;
-    second++;
 }
 
 /**
