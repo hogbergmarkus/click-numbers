@@ -52,7 +52,7 @@ document.addEventListener('DOMContentLoaded', function () {
             div.addEventListener('click', function () {
                 if (timerRunning === true) {
                     let divNumber = parseInt(div.textContent); //Get number from clicked div
-                    if (divNumber === firstNumber) {
+                    if (divNumber === firstNumber && firstNumber < 16) {
                         div.style.backgroundColor = 'green'; //If number is 1, color background green
                         firstNumber++; //Increment firstNumber by 1
                     } else if (divNumber !== firstNumber) {
@@ -73,6 +73,17 @@ document.addEventListener('DOMContentLoaded', function () {
 
                         //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
                         document.getElementById('start-button').disabled = true; //Disable start button on game over
+
+                    } else {
+                        if (firstNumber === 16) {
+                            setTimeout(function () {
+                                alert('Congratulations, you completetd the game');
+                            }, 100);
+                            div.style.backgroundColor = 'green';
+                            timerRunning = false;
+                            clearInterval(secondsInterval);
+                            document.getElementById('start-button').disabled = true;
+                        }
                     }
 
                 } else {
