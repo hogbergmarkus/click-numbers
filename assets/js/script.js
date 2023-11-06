@@ -39,9 +39,12 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
-    //Add eventlisteners to the divs with numbers inside, that are used to play game
-    //Main game function
-    //click in correct order, and collor correct clicks green
+    /*
+    Main game function
+    Add eventlisteners to the divs with numbers inside, that are used to play game
+    Click in correct order, and collor if clicked correct, green
+    If clicked in wrong order, red, and game over
+    */
     function clickableDivs() {
         let divs = document.getElementsByClassName('number-div');
 
