@@ -44,7 +44,18 @@ document.addEventListener('DOMContentLoaded', function () {
                         div.style.backgroundColor = 'green'; //If number is 1, color background green
                         firstNumber++; //Increment firstNumber by 1
                     } else if (divNumber !== firstNumber) {
-                        alert('Gameover');
+                        /*
+                        setTimeout function was helped by documentation at link below:
+                        https://www.w3schools.com/jsref/met_win_settimeout.asp
+                        Waits 0.5 sec before displaying alert message.
+                        Had to use this so div would color red before alert displays.
+                        */
+                        setTimeout(function () {
+                            alert('Game Over! Press Reset and then Start, to start a new game.');
+                        }, 500);
+                        div.style.backgroundColor = 'red';
+                        timerRunning = false;
+                        clearInterval(secondsInterval);
                     }
                 } else {
                     alert('No game is currently running, please press Start!');
