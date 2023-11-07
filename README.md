@@ -28,6 +28,8 @@ amount of addiction as you are trying to beat your best time.
   - [Features](#features)
     - [Start button](#start-button)
     - [Reset button](#reset-button)
+    - [Cursor](#cursor)
+    - [Game numbers](#game-numbers)
 
 ## Website owner and user goals
 
@@ -119,3 +121,14 @@ which I quite enjoy.
 5. It also resets the order of which numbers are to be clicked.
 
 - At the en of the game, or game over, Reset has to be pressed before a new game can start.
+
+### Cursor
+
+The cursor will change shape when hovered above the clickable numbers.
+
+### Game numbers
+
+- The numbers placement is randomized, and will change position each game.
+- When clicked in correct order, background will color green.
+- When clicked incorrectly, background will color red.
+- If clicked wile no game is running, an alert will prompt you to start a game.
