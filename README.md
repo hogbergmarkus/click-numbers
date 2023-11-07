@@ -33,6 +33,7 @@ amount of addiction as you are trying to beat your best time.
     - [Timer](#timer)
     - [Best time](#best-time)
   - [Features to add](#features-to-add)
+  - [Deployment](#deployment)
 
 ## Website owner and user goals
 
@@ -171,3 +172,14 @@ and if you beat your previous time, it will log your new best time to the screen
 - Sounds can be added.
 
 - There can be an option to change the numbers for colors instead.
+
+## Deployment
+
+1. From my [Github](https://github.com/hogbergmarkus/click-numbers) repository for the project.
+2. Click the settings icon in the top navigation menu.
+3. In the lefthand side menu, click Pages.
+4. Choose deploy from branch.
+5. Select "main" and "/(root)".
+6. Click Save.
+
+Here is a link to my deployed wedsite: [clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
