@@ -23,6 +23,8 @@ amount of addiction as you are trying to beat your best time.
     - [User story](#user-story)
   - [Design](#design)
     - [Wireframes](#wireframes)
+    - [Fonts](#fonts)
+    - [Colors](#colors)
 
 ## Website owner and user goals
 
@@ -67,3 +69,22 @@ If the game lets them compete against themselves they are sure to come back for 
 Here you will find the link to my wireframes from the design phase:
 
 [Wireframes](https://github.com/hogbergmarkus/click-numbers/tree/main/documentation/wireframes)
+
+### Fonts
+
+1. Playpen Sans was chosen as the main font. I liked it for its playful looks,
+
+    and felt it was well suited to give a joyful style to the pages otherwise
+    simple styling.
+
+2. Lato was chosen as a backup, because of its wide compatibility, readability,
+    and modern style.
+
+### Colors
+
+I chose to keep the colors muted an simple, because I didnt want to distract the
+
+player, while they try to find the correct numbers.
+
+Also, the gray background with white text reminds me of sitting in my IDE,
+which I quite enjoy.
