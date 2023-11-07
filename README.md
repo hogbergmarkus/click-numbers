@@ -31,6 +31,7 @@ amount of addiction as you are trying to beat your best time.
     - [Cursor](#cursor)
     - [Game numbers](#game-numbers)
     - [Timer](#timer)
+    - [Best time](#best-time)
 
 ## Website owner and user goals
 
@@ -139,3 +140,13 @@ The cursor will change shape when hovered above the clickable numbers.
 - Timer will start when game starts.
 - It stops when game is completed or game over.
 - Resets when reset button us pressed.
+
+### Best time
+
+The first game completed will be logged to the screen, so the coming attempts will
+
+have something to be compared to.
+
+The best time feature will look at the time on the timer when game is completed,
+
+and if you beat your previous time, it will log your new best time to the screen.
