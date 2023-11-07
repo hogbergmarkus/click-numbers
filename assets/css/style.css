@@ -25,6 +25,7 @@ h2 {
     justify-content: center;
     flex-direction: row;
     margin: 10px 0px;
+    cursor: pointer;
 }
 
 .number-div {
