@@ -2,7 +2,8 @@
 
 ## Introduction
 
-clickNumbers is a website aimed at people that want some light entertainment,
+[clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
+is a website aimed at people that want some light entertainment,
 
 while also getting exercise for their mind and a chance to compete against themselves.
 
