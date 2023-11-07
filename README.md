@@ -35,6 +35,7 @@ amount of addiction as you are trying to beat your best time.
     - [Best time](#best-time)
   - [Features to add](#features-to-add)
   - [Deployment](#deployment)
+  - [Languages](#languages)
 
 ## Website owner and user goals
 
@@ -184,3 +185,12 @@ and if you beat your previous time, it will log your new best time to the screen
 6. Click Save.
 
 Here is a link to my deployed wedsite: [clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
+
+## Languages
+
+Languages used during this project:
+
+1. HTML
+2. CSS
+3. JavaScript
+4. Markdown
