@@ -36,6 +36,7 @@ amount of addiction as you are trying to beat your best time.
   - [Features to add](#features-to-add)
   - [Deployment](#deployment)
   - [Languages](#languages)
+  - [Technologies used](#technologies-used)
 
 ## Website owner and user goals
 
@@ -190,7 +191,17 @@ Here is a link to my deployed wedsite: [clickNumbers](https://hogbergmarkus.gith
 
 Languages used during this project:
 
-1. HTML
-2. CSS
-3. JavaScript
+1. JavaScript
+2. HTML
+3. CSS
 4. Markdown
+
+## Technologies used
+
+- [CodeAnywhere](https://codeanywhere.com/solutions/collaborate), cloud based IDE.
+- [Github](https://github.com/), for documentation and deployment.
+- [Slack](https://slack.com/), for cummunication and community
+- [Balsamiq](https://balsamiq.com/), for creating wireframes.
+- [Google Fonts](https://fonts.google.com/), for text styling.
+- [Google](https://www.google.com/), search tool.
+- Chrome developer tools.
