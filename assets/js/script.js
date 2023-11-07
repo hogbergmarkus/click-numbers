@@ -99,11 +99,11 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /*
-    Timer function, starts when Start button is pressed
-    I used the documentation from the link below to help with this
-    https://www.w3schools.com/jsref/met_win_setinterval.asp
-    */
+    /**
+     * Timer function, starts when Start button is pressed.
+     * I used the documentation from the link below to help with this.
+     * https://www.w3schools.com/jsref/met_win_setinterval.asp.
+     */
     function setTimer() {
         let timer = document.getElementById('timer');
         timer.innerHTML = `Timer: ${second}`;
@@ -156,9 +156,9 @@ function resetDivs() {
 }
 
 /**
- * Get time on timer when game is completed
- * Add it to Your best time in html if time is shorter or 0
- * Found slice method in notes from the javascript course
+ * Get the time on timer when game is completed.
+ * Add it to Your best time if time is shorter, or if it is 0.
+ * Found slice method in notes from the javascript course.
  */
 function bestTime() {
     let time = document.getElementById('timer').textContent;
