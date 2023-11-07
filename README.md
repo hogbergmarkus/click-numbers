@@ -32,6 +32,7 @@ amount of addiction as you are trying to beat your best time.
     - [Game numbers](#game-numbers)
     - [Timer](#timer)
     - [Best time](#best-time)
+  - [Features to add](#features-to-add)
 
 ## Website owner and user goals
 
@@ -150,3 +151,23 @@ have something to be compared to.
 The best time feature will look at the time on the timer when game is completed,
 
 and if you beat your previous time, it will log your new best time to the screen.
+
+## Features to add
+
+- The game when fully developed, would have multiple difficulty levels.
+
+    Each harder level would have an increased amount of numbers to click through.
+
+- For the hardest setting, the colors could be removed from numbers that are clicked,
+
+    that way it would be harder to keep track of numbers already clicked.
+
+    It would also be harder to find the numbers you are looking for, since there would
+
+    be no visual cues.
+
+- There could be a login, to be able to save your score.
+
+- Sounds can be added.
+
+- There can be an option to change the numbers for colors instead.
