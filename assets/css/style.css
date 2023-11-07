@@ -25,13 +25,13 @@ h2 {
     justify-content: center;
     flex-direction: row;
     margin: 10px 0px;
-    cursor: pointer;
 }
 
 .number-div {
     min-width: 17%;
     padding: 10px 5px;
     margin: 5px;
+    cursor: pointer;
 }
 
 /* Styles for start and reset buttons */
