@@ -30,6 +30,7 @@ amount of addiction as you are trying to beat your best time.
     - [Reset button](#reset-button)
     - [Cursor](#cursor)
     - [Game numbers](#game-numbers)
+    - [Timer](#timer)
 
 ## Website owner and user goals
 
@@ -132,3 +133,9 @@ The cursor will change shape when hovered above the clickable numbers.
 - When clicked in correct order, background will color green.
 - When clicked incorrectly, background will color red.
 - If clicked wile no game is running, an alert will prompt you to start a game.
+
+### Timer
+
+- Timer will start when game starts.
+- It stops when game is completed or game over.
+- Resets when reset button us pressed.
