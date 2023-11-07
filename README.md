@@ -25,6 +25,9 @@ amount of addiction as you are trying to beat your best time.
     - [Wireframes](#wireframes)
     - [Fonts](#fonts)
     - [Colors](#colors)
+  - [Features](#features)
+    - [Start button](#start-button)
+    - [Reset button](#reset-button)
 
 ## Website owner and user goals
 
@@ -88,3 +91,31 @@ player, while they try to find the correct numbers.
 
 Also, the gray background with white text reminds me of sitting in my IDE,
 which I quite enjoy.
+
+## Features
+
+### Start button
+
+- The start button has to be pressed for game to start, otherwise an alert will tell
+
+    you that no game is running, please press start.
+
+- Button has a hover effect
+- When the game is completed, or you hit Game Over, button is disabled to stop players
+  
+  from just starting from where game over was hit, or starting game without resetting the board.
+  
+- Starts the game and the timer.
+  
+### Reset button
+
+- Reset button has a hover effect.
+- The button has multiple functions build into itself:
+  
+1. It resets the board, filling the divs with new randomly placed numbers.
+2. It resets the colors of the divs, wich were colored by clicks in previous game.
+3. It resets the timer to 0.
+4. It stops the game, so start has to be pressed again to play a new game.
+5. It also resets the order of which numbers are to be clicked.
+
+- At the en of the game, or game over, Reset has to be pressed before a new game can start.
