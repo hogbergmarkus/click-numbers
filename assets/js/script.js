@@ -14,32 +14,32 @@ document.addEventListener('DOMContentLoaded', function () {
     let firstNumber = 1; //Keep count of what number is clicked
 
     for (let button of buttons) {
-        button.addEventListener('click', function () {
-            if (this.getAttribute('data-type') === 'start') {
-                secondsInterval = setInterval(setTimer, 1000); //Start timer function
-                timerRunning = true; //Starts game
-
-            } else if (this.getAttribute('data-type') === 'reset') {
-                clearInterval(secondsInterval);
-                second = 0; //Set "second" variable back to 0
-                let timer = document.getElementById('timer');
-                timer.innerHTML = `Timer: ${second}`; //Reset the html to 0
-                timerRunning = false; //Stops game
-                firstNumber = 1;
-
-                //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
-                document.getElementById('start-button').disabled = false; //Enables startbutton when game is reset
-
-                resetDivs();
-                addNumToDiv();
-
-            } else {
-                alert('No game is running, please press "Start"');
-            }
-
-        });
+        button.addEventListener('click', handleClick);
     }
 
+    function handleClick(event) {
+        if (event.target.getAttribute('data-type') === 'start') {
+            secondsInterval = setInterval(setTimer, 1000); //Start timer
+            timerRunning = true; //Start game
+
+        } else if (event.target.getAttribute('data-type') === 'reset') {
+            clearInterval(secondsInterval);
+            second = 0;
+            let timer = document.getElementById('timer');
+            timer.innerHTML = `Timer: ${second}`; //Reset timer in HTML
+            timerRunning = false; //Stop game
+            firstNumber = 1;
+
+            //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+            document.getElementById('start-button').disabled = false;
+
+            resetDivs();
+            addNumToDiv();
+
+        } else {
+            alert('No game is running, please press "Start"');
+        }
+    }
 
     /*
     Main game function
