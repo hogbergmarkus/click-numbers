@@ -1,7 +1,8 @@
 /*
-This piece of code was helped by the Love Maths walkthrough project
+This piece of code to add eventlisteners on DOM loaded using "data-type",
+was helped by the Love Maths walkthrough project.
 https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/05-tidying-up/01-a-few-last-things/assets/js/script.js
-Add event listeners to Start and Reset buttons on DOM load
+Add event listeners to Start and Reset buttons on DOM load.
 Add event listeners to number divs with clickableDivs function
 Start and reset game.
  */
