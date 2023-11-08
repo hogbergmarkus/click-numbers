@@ -37,6 +37,8 @@ amount of addiction as you are trying to beat your best time.
   - [Deployment](#deployment)
   - [Languages](#languages)
   - [Technologies used](#technologies-used)
+  - [Testing](#testing)
+    - [Validation](#validation)
 
 ## Website owner and user goals
 
@@ -205,3 +207,13 @@ Languages used during this project:
 - [Google Fonts](https://fonts.google.com/), for text styling.
 - [Google](https://www.google.com/), search tool.
 - Chrome developer tools.
+
+## Testing
+
+### Validation
+
+HTML was validated using [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
+with no errors or warnings.
+
+CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
+with no errors or warnings.
