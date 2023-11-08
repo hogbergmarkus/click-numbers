@@ -40,6 +40,7 @@ document.addEventListener('DOMContentLoaded', function () {
         });
     }
 
+
     /*
     Main game function
     Add eventlisteners to the divs with numbers inside, that are used to play game
