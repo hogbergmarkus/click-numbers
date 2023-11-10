@@ -113,6 +113,12 @@ player, while they try to find the correct numbers.
 Also, the gray background with white text reminds me of sitting in my IDE,
 which I quite enjoy.
 
+The added colors of red and green to the buttons provide instant context which button
+does what.
+
+For the clicked numbers, the red and green should provide instant response if you
+clicked right or wrong.
+
 ## Screenshot of finished website
 
 ![Screenshot of game](documentation/images-readme/website-screenshot.png)
