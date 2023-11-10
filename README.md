@@ -39,6 +39,7 @@ amount of addiction as you are trying to beat your best time.
   - [Technologies used](#technologies-used)
   - [Testing](#testing)
     - [Validation](#validation)
+    - [Responsiveness](#responsiveness)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
     - [Bug 2](#bug-2)
@@ -226,6 +227,34 @@ with no errors or warnings.
 
 CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
 with no errors or warnings
+
+### Responsiveness
+
+The game was developed with a mobile first approach, but also works well on larger screens.
+
+With the layout I have created, and how I have sized the elements using CSS,
+
+There is currently no need for media queries.
+
+During development I used These divices mainly for testing:
+
+- Samsung Galaxy Fold
+- Iphone 12 Pro
+- iPad
+- Used responsive screen sizing a lot as well
+
+After deploying the project to GitHub Pages, I tested further on:
+
+- Google Pixel 5
+- Iphone 15 Pro
+- iPad Pro
+- Desktop computer
+
+I tested the deployed webside in these web browsers:
+
+- Google Chrome
+- Safari
+- Microsoft Edge
 
 ## Bugs
 
