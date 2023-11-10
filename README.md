@@ -155,6 +155,10 @@ The cursor will change shape when hovered above the clickable numbers.
 
 ### Game numbers
 
+![Number divs](documentation/images-readme/numbers-screenshot.png)
+
+![Number divs second](documentation/images-readme/numbers-screenshot-2.png)
+
 - The numbers placement is randomized, and will change position each game.
 - When clicked in correct order, background will color green.
 - When clicked incorrectly, background will color red.
