@@ -8,6 +8,7 @@ Start and reset game.
  */
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
+    let divs = document.getElementsByClassName('number-div');
     let secondsInterval; //Keep track of timer count
     let second = 0; //Set displaying time on page
     let timerRunning = false; //Game stopped
@@ -48,56 +49,53 @@ document.addEventListener('DOMContentLoaded', function () {
     If clicked in wrong order, red, and game over
     Game complete
     */
-    function clickableDivs() {
-        let divs = document.getElementsByClassName('number-div');
 
-        for (let div of divs) {
-            div.addEventListener('click', function () {
-                if (timerRunning === true) {
-                    let divNumber = parseInt(div.textContent); //Get number from clicked div
-                    if (divNumber === firstNumber && firstNumber < 16) {
-                        div.style.backgroundColor = 'green'; //If number is 1, color background green
-                        firstNumber++; //Increment firstNumber by 1
-                    } else if (divNumber !== firstNumber) {
+    for (let div of divs) {
+        div.addEventListener('click', handleDivClick);
+    }
 
-                        /*
-                        setTimeout function was helped by documentation at link below:
-                        https://www.w3schools.com/jsref/met_win_settimeout.asp
-                        Waits 0.5 sec before displaying alert message.
-                        Had to use this so div would color red before alert displays.
-                        */
-                        setTimeout(function () {
-                            alert('Game Over! Press Reset and then Start, to start a new game.');
-                        }, 100);
+    function handleDivClick() {
+        if (timerRunning === true) {
+            let divNumber = parseInt(this.textContent);//Get number from clicked div
+            if (divNumber === firstNumber && firstNumber < 16) {
+                this.style.backgroundColor = 'green';//If number is 1, color background green
+                firstNumber++;
 
-                        div.style.backgroundColor = 'red';
-                        timerRunning = false; //Stops game
-                        clearInterval(secondsInterval); //Stop timer
+            } else if (divNumber !== firstNumber) {
 
-                        //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
-                        document.getElementById('start-button').disabled = true; //Disable start button on game over
+                /*
+                setTimeout function was helped by documentation at link below:
+                https://www.w3schools.com/jsref/met_win_settimeout.asp
+                Waits 0.1 sec before displaying alert message.
+                Had to use this so div would color red before alert displays.
+                */
+                setTimeout(function () {
+                    alert('Game Over! Press Reset and then Start, to start a new game.');
+                }, 100);
 
-                        //Game complete functionality
-                    } else {
-                        if (firstNumber === 16) {
+                this.style.backgroundColor = 'red';
+                timerRunning = false;//Stops game
+                clearInterval(secondsInterval);//Stop timer
 
-                            setTimeout(function () {
-                                alert('Congratulations, you completetd the game');
-                            }, 100);
+                //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
+                document.getElementById('start-button').disabled = true;
 
-                            div.style.backgroundColor = 'green';
-                            timerRunning = false;
-                            clearInterval(secondsInterval);
-                            document.getElementById('start-button').disabled = true;
-                            bestTime();
-                        }
-                    }
-
-                } else {
-                    alert('No game is currently running, please press Start!');
+                //Game complete functionality
+            } else {
+                if (firstNumber === 16) {
+                    setTimeout(function () {
+                        alert('Congratulations, you completed the game');
+                    }, 100);
+                    this.style.backgroundColor = 'green';
+                    timerRunning = false;
+                    clearInterval(secondsInterval);
+                    document.getElementById('start-button').disabled = true;
+                    bestTime();
                 }
+            }
 
-            });
+        } else {
+            alert('No game is currently running, please press Start!');
         }
     }
 
@@ -112,7 +110,6 @@ document.addEventListener('DOMContentLoaded', function () {
         second++;
     }
 
-    clickableDivs();
     addNumToDiv();
 });
 
