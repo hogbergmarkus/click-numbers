@@ -28,6 +28,7 @@ amount of addiction as you are trying to beat your best time.
     - [Wireframes](#wireframes)
     - [Fonts](#fonts)
     - [Colors](#colors)
+  - [Screenshot of finished website](#screenshot-of-finished-website)
   - [Features](#features)
     - [Start button](#start-button)
     - [Reset button](#reset-button)
@@ -111,6 +112,10 @@ player, while they try to find the correct numbers.
 
 Also, the gray background with white text reminds me of sitting in my IDE,
 which I quite enjoy.
+
+## Screenshot of finished website
+
+![Screenshot of game](documentation/images-readme/website-screenshot.png)
 
 ## Features
 
