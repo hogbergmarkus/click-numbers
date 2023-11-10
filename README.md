@@ -246,6 +246,18 @@ to confusing semantics. (timerRunning, div, firstNumber, secondsInterval, bestTi
 
 ### Bug 1
 
+Bug has been patched.
+
+I searched Slack, google and stack overflow for what the issue was exactly.
+
+It did not cause any issues with my program, but getting rid of the warning seemed
+
+appropriate.
+
+I found the answer, which was to remove a loop from inside a function, and place it
+
+outside the function instead.
+
 ### Bug 2
 
 Bug has been patched. There was an undeclared variable, which is now declared.
