@@ -174,6 +174,8 @@ The cursor will change shape when hovered above the clickable numbers.
 
 ### Best time
 
+![Best time](documentation/images-readme/best-time-screenshot.png)
+
 The first game completed will be logged to the screen, so the coming attempts will
 
 have something to be compared to.
