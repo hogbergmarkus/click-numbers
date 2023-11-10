@@ -139,7 +139,7 @@ function randomArray() {
 */
 function addNumToDiv() {
     let divs = document.getElementsByClassName('number-div');
-    numbers = randomArray(); //Function that generats array with random, unique numbers 1-16
+    let numbers = randomArray(); //Function that generats array with random, unique numbers 1-16
 
     for (let i = 0; i < divs.length; i++) {
         divs[i].textContent = numbers[i]; //Add the numbers from randomArray to each number-div in the html
