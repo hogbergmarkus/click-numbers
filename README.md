@@ -218,17 +218,20 @@ Languages used during this project:
 
 ### Validation
 
+JavaScript was validated using [JSHint](https://jshint.com/)
+with no errors or warnings.
+
 HTML was validated using [W3C Markup Validation Service](https://validator.w3.org/#validate_by_input)
 with no errors or warnings.
 
 CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
-with no errors or warnings.
+with no errors or warnings
 
 ## Bugs
 
 ### Bug 1
 
-- When running my code through jshint, I get a warning saying
+- When running my code through jshint, I got a warning saying
 
 "Functions declared within loops referencing an outer scoped variable may lead
 
@@ -236,7 +239,7 @@ to confusing semantics. (timerRunning, div, firstNumber, secondsInterval, bestTi
 
 ### Bug 2
 
-- When running my code through jshint, I get a warning saying
+- When running my code through jshint, I got a warning saying
 
 "One undefined variable
 142	numbers
