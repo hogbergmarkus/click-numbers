@@ -187,6 +187,8 @@ and if you beat your previous time, it will log your new best time to the screen
 
 ## Deployment
 
+I deployed the website to GitHub Pages using the following steps:
+
 1. From my [Github](https://github.com/hogbergmarkus/click-numbers) repository for the project.
 2. Click the settings icon in the top navigation menu.
 3. In the lefthand side menu, click Pages.
@@ -194,7 +196,13 @@ and if you beat your previous time, it will log your new best time to the screen
 5. Select "main" and "/(root)".
 6. Click Save.
 
-Here is a link to my deployed wedsite: [clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
+After the build finished, the project is now accessible from the project repository.
+
+On the righthand side is a tab called Deployments, click that and then you will
+
+find a link to the deployed website under Active Deployments.
+
+Here is a link to my deployed website: [clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
 
 ## Languages
 
