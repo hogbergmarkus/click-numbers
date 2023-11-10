@@ -39,6 +39,9 @@ amount of addiction as you are trying to beat your best time.
   - [Technologies used](#technologies-used)
   - [Testing](#testing)
     - [Validation](#validation)
+  - [Bugs](#bugs)
+    - [Bug 1](#bug-1)
+    - [Bug 2](#bug-2)
 
 ## Website owner and user goals
 
@@ -217,3 +220,21 @@ with no errors or warnings.
 
 CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
 with no errors or warnings.
+
+## Bugs
+
+### Bug 1
+
+- When running my code through jshint, I get a warning saying
+
+"Functions declared within loops referencing an outer scoped variable may lead
+
+to confusing semantics. (timerRunning, div, firstNumber, secondsInterval, bestTime)"
+
+### Bug 2
+
+- When running my code through jshint, I get a warning saying
+
+"One undefined variable
+142	numbers
+145	numbers"
