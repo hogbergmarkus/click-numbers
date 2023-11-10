@@ -42,6 +42,9 @@ amount of addiction as you are trying to beat your best time.
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
     - [Bug 2](#bug-2)
+  - [Fixed Bugs](#fixed-bugs)
+    - [Bug 1](#bug-1-1)
+    - [Bug 2](#bug-2-1)
 
 ## Website owner and user goals
 
@@ -238,3 +241,11 @@ to confusing semantics. (timerRunning, div, firstNumber, secondsInterval, bestTi
 "One undefined variable
 142	numbers
 145	numbers"
+
+## Fixed Bugs
+
+### Bug 1
+
+### Bug 2
+
+Bug has been patched. There was an undeclared variable, which is now declared.
