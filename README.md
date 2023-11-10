@@ -1,5 +1,7 @@
 # clickNumbers
 
+![Am I responsive](documentation/images-readme/am-i-responsive.png)
+
 ## Introduction
 
 [clickNumbers](https://hogbergmarkus.github.io/click-numbers/)
