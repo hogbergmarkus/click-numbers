@@ -166,6 +166,8 @@ The cursor will change shape when hovered above the clickable numbers.
 
 ### Timer
 
+![Timer](documentation/images-readme/timer-screenshot.png)
+
 - Timer will start when game starts.
 - It stops when game is completed or game over.
 - Resets when reset button us pressed.
