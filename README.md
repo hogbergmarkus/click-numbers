@@ -121,6 +121,8 @@ which I quite enjoy.
 
 ### Start button
 
+![Start button](documentation/images-readme/start-button.png)
+
 - The start button has to be pressed for game to start, otherwise an alert will tell
 
     you that no game is running, please press start.
@@ -133,6 +135,8 @@ which I quite enjoy.
 - Starts the game and the timer.
   
 ### Reset button
+
+![Reset button](documentation/images-readme/reset-button.png)
 
 - Reset button has a hover effect.
 - The button has multiple functions build into itself:
