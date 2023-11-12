@@ -2,10 +2,7 @@
 This piece of code to add eventlisteners on DOM loaded using "data-type",
 was helped by the Love Maths walkthrough project.
 https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/05-tidying-up/01-a-few-last-things/assets/js/script.js
-Add event listeners to Start and Reset buttons on DOM load.
-Add event listeners to number divs with clickableDivs function
-Start and reset game.
- */
+*/
 document.addEventListener('DOMContentLoaded', function () {
     let buttons = document.getElementsByTagName('button');
     let divs = document.getElementsByClassName('number-div');
@@ -14,10 +11,12 @@ document.addEventListener('DOMContentLoaded', function () {
     let timerRunning = false; //Game stopped
     let firstNumber = 1; //Keep count of what number is clicked
 
+    //Add eventlisteners to Start and Reset buttons.
     for (let button of buttons) {
         button.addEventListener('click', handleClick);
     }
 
+    //Functions for Start and Reset Buttons
     function handleClick(event) {
         if (event.target.getAttribute('data-type') === 'start') {
             secondsInterval = setInterval(setTimer, 1000); //Start timer
@@ -42,23 +41,22 @@ document.addEventListener('DOMContentLoaded', function () {
         }
     }
 
-    /*
-    Main game function
-    Add eventlisteners to the divs with numbers inside, that are used to play game
-    Click in correct order, and collor if clicked correct, green
-    If clicked in wrong order, red, and game over
-    Game complete
-    */
-
+    //Add eventlisteners to game divs with numbers inside
     for (let div of divs) {
         div.addEventListener('click', handleDivClick);
     }
 
+    /*
+    Main game function
+    Click in correct order, and color if clicked correct, green.
+    If clicked in wrong order, red, and game over.
+    Game complete.
+    */
     function handleDivClick() {
         if (timerRunning === true) {
             let divNumber = parseInt(this.textContent);//Get number from clicked div
             if (divNumber === firstNumber && firstNumber < 16) {
-                this.style.backgroundColor = 'green';//If number is 1, color background green
+                this.style.backgroundColor = 'green';//If number is correct, color background green
                 firstNumber++;
 
             } else if (divNumber !== firstNumber) {
@@ -74,7 +72,7 @@ document.addEventListener('DOMContentLoaded', function () {
                 }, 100);
 
                 this.style.backgroundColor = 'red';
-                timerRunning = false;//Stops game
+                timerRunning = false;
                 clearInterval(secondsInterval);//Stop timer
 
                 //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
