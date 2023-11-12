@@ -76,9 +76,6 @@ document.addEventListener('DOMContentLoaded', function () {
                 timerRunning = false;
                 clearInterval(secondsInterval);//Stop timer
 
-                //Button control found at: https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp
-                document.getElementById('start-button').disabled = true;
-
                 //Game complete functionality
             } else {
                 if (firstNumber === 16) {
@@ -88,7 +85,6 @@ document.addEventListener('DOMContentLoaded', function () {
                     this.style.backgroundColor = 'green';
                     timerRunning = false;
                     clearInterval(secondsInterval);
-                    document.getElementById('start-button').disabled = true;
                     bestTime();
                 }
             }
