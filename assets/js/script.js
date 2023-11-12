@@ -4,7 +4,7 @@ was helped by the Love Maths walkthrough project.
 https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/05-tidying-up/01-a-few-last-things/assets/js/script.js
 */
 document.addEventListener('DOMContentLoaded', function () {
-    let buttons = document.getElementsByTagName('button');
+    const buttons = document.getElementsByTagName('button');
     let divs = document.getElementsByClassName('number-div');
     let secondsInterval; //Keep track of timer count
     let second = 0; //Set displaying time on page
@@ -113,7 +113,7 @@ document.addEventListener('DOMContentLoaded', function () {
 
 //Creates an array and fills it randomly with numbers 1-16
 function randomArray() {
-    let array = []; //Create an empty array
+    const array = []; //Create an empty array
 
     while (array.length < 16) {
         let number = Math.floor(Math.random() * 16) + 1; //Random numbers 1-16
