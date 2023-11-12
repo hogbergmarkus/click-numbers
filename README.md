@@ -346,6 +346,8 @@ Browsers used for testing was:
 - Resets the timer count.
 - Resets the displayed time on the timer, on the website.
 - Resets the number count, so the number clicked starts from 1 again.
+- Resets colors of the divs with numbers inside.
+- Enables the start button again.
 
 #### Game numbers
 
