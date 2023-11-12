@@ -335,8 +335,7 @@ Browsers used for testing was:
 - Highlights when mouse is hovered over.
 - Starts game as expected.
 - Starts timer.
-- Button is disabled when game is completed.
-- Button is disabled on game over.
+- Button is disabled after game starts.
 - Button is enabled again after reset button is pressed.
 
 #### Reset button
