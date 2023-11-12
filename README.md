@@ -52,6 +52,7 @@ amount of addiction as you are trying to beat your best time.
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
     - [Bug 2](#bug-2)
+    - [Bug 3](#bug-3)
   - [Fixed Bugs](#fixed-bugs)
     - [Bug 1](#bug-1-1)
     - [Bug 2](#bug-2-1)
@@ -338,7 +339,7 @@ I tested the deployed webside in these web browsers:
 
 ### Bug 1
 
-- When running my code through jshint, I got a warning saying
+When running my code through jshint, I got a warning saying
 
 "Functions declared within loops referencing an outer scoped variable may lead
 
@@ -346,11 +347,19 @@ to confusing semantics. (timerRunning, div, firstNumber, secondsInterval, bestTi
 
 ### Bug 2
 
-- When running my code through jshint, I got a warning saying
+When running my code through jshint, I got a warning saying
 
 "One undefined variable
 142	numbers
 145	numbers"
+
+### Bug 3
+
+During manual testing, using an iPad pro and Safari, I found that the timer could
+
+be made to run abnormaly fast, and not reset when reset button was pressed.
+
+This happened when the Start button was pressed several times in a row.
 
 ## Fixed Bugs
 
