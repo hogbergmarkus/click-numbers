@@ -43,6 +43,12 @@ amount of addiction as you are trying to beat your best time.
   - [Testing](#testing)
     - [Validation](#validation)
     - [Responsiveness](#responsiveness)
+    - [Manual testing](#manual-testing)
+      - [Start button](#start-button-1)
+      - [Reset button](#reset-button-1)
+      - [Game numbers](#game-numbers-1)
+      - [Timer](#timer-1)
+      - [Your best time](#your-best-time)
   - [Bugs](#bugs)
     - [Bug 1](#bug-1)
     - [Bug 2](#bug-2)
@@ -288,6 +294,45 @@ I tested the deployed webside in these web browsers:
 - Google Chrome
 - Safari
 - Microsoft Edge
+
+### Manual testing
+
+#### Start button
+
+- Highlights when mouse is hovered over.
+- Starts game as expected.
+- Starts timer.
+- Button is disabled when game is completed.
+- Button is disabled on game over.
+- Button is enabled again after reset button is pressed.
+
+#### Reset button
+
+- Highlights when mouse is hovered over.
+- Resets game as expected, so new game is able to start.
+- Shuffles the game board of numbers.
+- Resets the timer count.
+- Resets the displayed time on the timer, on the website.
+- Resets the number count, so the number clicked starts from 1 again.
+
+#### Game numbers
+
+- If no game is running, alert message will tell the user to start a game.
+- Board is shuffled properly between games.
+- When numbers are clicked correctly, div background colors green.
+- When numbers are clicked incorrectly, div background colors red.
+- When all numbers are clicked in correct order, game is complete, game stops, alert congratulates.
+
+#### Timer
+
+- Timer starts when game starts.
+- Timer stops when game is complete or on game over.
+- Timer is reset between games properly, both timer count and displayed time.
+
+#### Your best time
+
+- When first game is completed, that time will be displayed as Your best time.
+- If you beat your previous time, that time will display properly as Your best time.
 
 ## Bugs
 
