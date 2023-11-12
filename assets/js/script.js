@@ -82,7 +82,7 @@ document.addEventListener('DOMContentLoaded', function () {
             } else {
                 if (firstNumber === 16) {
                     setTimeout(function () {
-                        alert('Congratulations, you completed the game');
+                        alert('Congratulations, you completed the game!');
                     }, 100);
                     this.style.backgroundColor = 'green';
                     timerRunning = false;
@@ -93,7 +93,7 @@ document.addEventListener('DOMContentLoaded', function () {
             }
 
         } else {
-            alert('No game is currently running, please press Start!');
+            alert('No game is currently running, please press Start! If game is completed, or game over, press Reset and then Start.');
         }
     }
 
