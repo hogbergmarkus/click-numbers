@@ -121,7 +121,7 @@ Here you will find the link to my wireframes from the design phase:
 
 ### Colors
 
-I chose to keep the colors muted an simple, because I didnt want to distract the
+I chose to keep the colors muted an simple, because I didn't want to distract the
 
 player, while they try to find the correct numbers.
 
@@ -160,6 +160,7 @@ clicked right or wrong.
 ![Reset button](documentation/images-readme/reset-button.png)
 
 - Reset button has a hover effect.
+
 - The button has multiple functions build into itself:
   
 1. It resets the board, filling the divs with new randomly placed numbers.
@@ -168,7 +169,7 @@ clicked right or wrong.
 4. It stops the game, so start has to be pressed again to play a new game.
 5. It also resets the order of which numbers are to be clicked.
 
-- At the en of the game, or game over, Reset has to be pressed before a new game can start.
+- At the end of the game, or game over, Reset has to be pressed before a new game can start.
 
 ### Cursor
 
@@ -181,8 +182,11 @@ The cursor will change shape when hovered above the clickable numbers.
 ![Number divs second](documentation/images-readme/numbers-screenshot-2.png)
 
 - The numbers placement is randomized, and will change position each game.
+
 - When clicked in correct order, background will color green.
+
 - When clicked incorrectly, background will color red.
+
 - If clicked wile no game is running, an alert will prompt you to start a game.
 
 ### Timer
@@ -190,7 +194,9 @@ The cursor will change shape when hovered above the clickable numbers.
 ![Timer](documentation/images-readme/timer-screenshot.png)
 
 - Timer will start when game starts.
+
 - It stops when game is completed or game over.
+
 - Resets when reset button us pressed.
 
 ### Best time
@@ -257,7 +263,7 @@ Languages used during this project:
 
 - [CodeAnywhere](https://codeanywhere.com/solutions/collaborate), cloud based IDE.
 - [Github](https://github.com/), for documentation and deployment.
-- [Slack](https://slack.com/), for cummunication and community
+- [Slack](https://slack.com/), for communication and community
 - [Balsamiq](https://balsamiq.com/), for creating wireframes.
 - [Google Fonts](https://fonts.google.com/), for text styling.
 - [Google](https://www.google.com/), search tool.
