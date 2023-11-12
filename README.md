@@ -57,6 +57,7 @@ amount of addiction as you are trying to beat your best time.
     - [Bug 1](#bug-1-1)
     - [Bug 2](#bug-2-1)
     - [Bug 3](#bug-3-1)
+  - [Unfixed bugs](#unfixed-bugs)
 
 ## Website owner and user goals
 
@@ -400,3 +401,7 @@ Bug has been patched. There was an undeclared variable, which is now declared.
 ### Bug 3
 
 Bug has been patched. It was fixed by disabling the start button on game start.
+
+## Unfixed bugs
+
+There are currently no bugs unfixed that I am aware of.
