@@ -151,10 +151,6 @@ clicked right or wrong.
 - Button has a hover effect
 
 - Button is disabled on game start to prevent bugs.
-
-- When the game is completed, or you hit Game Over, button is disabled to stop players
-  
-  from just starting from where game over was hit, or starting game without resetting the board.
   
 - Starts the game and the timer.
   
