@@ -56,6 +56,7 @@ amount of addiction as you are trying to beat your best time.
   - [Fixed Bugs](#fixed-bugs)
     - [Bug 1](#bug-1-1)
     - [Bug 2](#bug-2-1)
+    - [Bug 3](#bug-3-1)
 
 ## Website owner and user goals
 
@@ -359,6 +360,8 @@ During manual testing, using an iPad pro and Safari, I found that the timer coul
 
 be made to run abnormaly fast, and not reset when reset button was pressed.
 
+On further testing, this was the case on more devices and browsers.
+
 This happened when the Start button was pressed several times in a row.
 
 ## Fixed Bugs
@@ -380,3 +383,7 @@ outside the function instead.
 ### Bug 2
 
 Bug has been patched. There was an undeclared variable, which is now declared.
+
+### Bug 3
+
+Bug has been patched. It was fixed by disabling the start button on game start.
