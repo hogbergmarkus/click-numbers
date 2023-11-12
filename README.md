@@ -42,6 +42,7 @@ amount of addiction as you are trying to beat your best time.
   - [Technologies used](#technologies-used)
   - [Testing](#testing)
     - [Validation](#validation)
+    - [Lighthouse report](#lighthouse-report)
     - [Responsiveness](#responsiveness)
     - [Manual testing](#manual-testing)
       - [Start button](#start-button-1)
@@ -269,6 +270,12 @@ with no errors or warnings.
 
 CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
 with no errors or warnings
+
+### Lighthouse report
+
+The following lighthouse report was run on the finished deployed website:
+
+![Lighthouse report](documentation/images-readme/lighthouse-report.png)
 
 ### Responsiveness
 
