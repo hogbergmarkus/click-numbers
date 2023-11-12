@@ -299,6 +299,19 @@ I tested the deployed webside in these web browsers:
 
 ### Manual testing
 
+Manual testing was conducted on:
+
+- PC
+- iPad Pro
+- iPhone 15 Pro
+- Google Pixel 5
+
+Browsers used for testing was:
+
+- Google Chrome
+- Microsoft Edge
+- Safari
+
 #### Start button
 
 - Highlights when mouse is hovered over.
