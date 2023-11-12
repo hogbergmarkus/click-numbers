@@ -21,6 +21,7 @@ document.addEventListener('DOMContentLoaded', function () {
         if (event.target.getAttribute('data-type') === 'start') {
             secondsInterval = setInterval(setTimer, 1000); //Start timer
             timerRunning = true; //Start game
+            document.getElementById('start-button').disabled = true;
 
         } else if (event.target.getAttribute('data-type') === 'reset') {
             clearInterval(secondsInterval);
