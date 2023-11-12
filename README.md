@@ -59,6 +59,11 @@ amount of addiction as you are trying to beat your best time.
     - [Bug 2](#bug-2-1)
     - [Bug 3](#bug-3-1)
   - [Unfixed bugs](#unfixed-bugs)
+  - [Credits](#credits)
+    - [People](#people)
+    - [Documentation](#documentation)
+    - [Projects](#projects)
+    - [Websites](#websites)
 
 ## Website owner and user goals
 
@@ -412,3 +417,41 @@ Bug has been patched. It was fixed by disabling the start button on game start.
 ## Unfixed bugs
 
 There are currently no bugs unfixed that I am aware of.
+
+## Credits
+
+### People
+
+- Thank you to my mentor Jack Wachira, always with useful insights and advice.
+
+  Specifically directed me towards the setInterval and setTimeout functions.
+
+- Laura Mayock at Code Institute, gave me motivation when I needed it the most,
+  
+  and helped med unfreeze my current train of thoght.
+
+- My wife Alexandra, who listened to my endless talking and reasoning about my current
+  
+  code and how to solve my problems along the entire project.
+
+### Documentation
+
+- The setTimeout function was helped by this documentation
+  [W3 schools setTimeout](https://www.w3schools.com/jsref/met_win_settimeout.asp)
+
+- The setInterval function was helped by this documentation
+  [W3 schools setInterval](https://www.w3schools.com/jsref/met_win_setinterval.asp)
+
+- How to enable/disable buttons using JavaScript was found here
+  [W3 schools button disabled property](https://www.w3schools.com/jsref/prop_pushbutton_disabled.asp)
+
+- Documentation on how to change the cursor was found here
+  [W3 schools cursor property](https://www.w3schools.com/cssref/pr_class_cursor.php)
+
+### Projects
+
+- The [Love Maths](https://github.com/Code-Institute-Solutions/love-maths-2.0-sourcecode/blob/master/05-tidying-up/01-a-few-last-things/assets/js/script.js) project helped me load content on DOM loaded.
+
+### Websites
+
+- I created my favicon using this website [favicon.io](https://favicon.io/)
