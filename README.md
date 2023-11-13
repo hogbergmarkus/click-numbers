@@ -146,21 +146,27 @@ clicked right or wrong.
 
 - The start button has to be pressed for game to start, otherwise an alert will tell
 
-    you that no game is running, please press start.
+    you that no game is running, please press start. This gives the user control to start a game on demand.
 
-- Button has a hover effect
+- Button has a hover effect, this is a useful visual cue.
 
-- Button is disabled on game start to prevent bugs.
+- Button is disabled on game start to prevent bugs. Helps prevent the user from
   
-- Starts the game and the timer.
+  causing bugs in the game, by accident or by will.
+  
+- Starts the game and the timer. One button starts all game functions,
+  
+  easy and intuitive for the user experience.
   
 ### Reset button
 
 ![Reset button](documentation/images-readme/reset-button.png)
 
-- Reset button has a hover effect.
+- Reset button has a hover effect, this is a nice visual cue for the user.
 
-- The button has multiple functions build into itself:
+- The button has multiple functions built into itself, which makes it easy
+  
+  for the user to reset the entire game area with one button press:
   
 1. It resets the board, filling the divs with new randomly placed numbers.
 2. It resets the colors of the divs, wich were colored by clicks in previous game.
@@ -169,10 +175,15 @@ clicked right or wrong.
 5. It also resets the order of which numbers are to be clicked.
 
 - At the end of the game, or game over, Reset has to be pressed before a new game can start.
+  
+  This gives the user pause to reflect on their game they just played,
+  before resetting the game area.
 
 ### Cursor
 
 The cursor will change shape when hovered above the clickable numbers.
+
+This is useful for people playing with a mouse, as a helpful visual cue.
 
 ### Game numbers
 
@@ -181,34 +192,53 @@ The cursor will change shape when hovered above the clickable numbers.
 ![Number divs second](documentation/images-readme/numbers-screenshot-2.png)
 
 - The numbers placement is randomized, and will change position each game.
+  
+  This prevents the game from becoming predictable, and makes sure every game is
+  a new challenge.
 
 - When clicked in correct order, background will color green.
+  
+  Fast and easy way for the player to see that they clicked the correct number.
 
 - When clicked incorrectly, background will color red.
+  
+  Easy way for the player to see that they clicked the incorrect number.
 
 - If clicked wile no game is running, an alert will prompt you to start a game.
+  
+  Helps users to understand that the start and reset buttons must be used.
 
 ### Timer
 
 ![Timer](documentation/images-readme/timer-screenshot.png)
 
 - Timer will start when game starts.
+  
+  The timer introduces a competitive element to the player, which will make the
+  game more interesting to them.
 
 - It stops when game is completed or game over.
+  
+  Useful to the player so they know how fast they completed the current game.
 
 - Resets when reset button us pressed.
+  
+  Easy for the user that one button resets everything relevant between games.
 
 ### Best time
 
 ![Best time](documentation/images-readme/best-time-screenshot.png)
 
-The first game completed will be logged to the screen, so the coming attempts will
+- The first game completed will be logged to the screen, so the coming attempts will have something to be compared to.
+  
+  Now the player will have a time to compete against, which should be a fun
+  game mechanic.
 
-have something to be compared to.
+- The best time feature will look at the time on the timer when game is completed,
+  
+  and if you beat your previous time, it will log your new best time to the screen.
 
-The best time feature will look at the time on the timer when game is completed,
-
-and if you beat your previous time, it will log your new best time to the screen.
+  This should provide a sense of accomplishment to the user as they beat their own time.
 
 ## Features to add
 
@@ -434,7 +464,7 @@ There are currently no bugs unfixed that I am aware of.
 
 - Laura Mayock at Code Institute, gave me motivation when I needed it the most,
   
-  and helped med unfreeze my current train of thoght.
+  and helped med unfreeze my current train of thought.
 
 - My wife Alexandra, who listened to my endless talking and reasoning about my current
   
