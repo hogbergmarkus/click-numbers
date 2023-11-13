@@ -461,3 +461,5 @@ There are currently no bugs unfixed that I am aware of.
 ### Websites
 
 - I created my favicon using this website [favicon.io](https://favicon.io/)
+
+- The am I responsive image was created using this website [am I responsive](https://ui.dev/amiresponsive)
