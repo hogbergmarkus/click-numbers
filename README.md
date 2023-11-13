@@ -30,6 +30,8 @@ amount of addiction as you are trying to beat your best time.
     - [Colors](#colors)
   - [Screenshot of finished website](#screenshot-of-finished-website)
   - [Features](#features)
+    - [Main heading](#main-heading)
+    - [Game description](#game-description)
     - [Start button](#start-button)
     - [Reset button](#reset-button)
     - [Cursor](#cursor)
@@ -139,6 +141,27 @@ clicked right or wrong.
 ![Screenshot of game](documentation/images-readme/website-screenshot.png)
 
 ## Features
+
+### Main heading
+
+![Main heading](documentation/images-readme/heading-screenshot.png)
+
+- The heading for the page is written using camelCase, and frankly, tells you
+  exactly what the game is about.
+  
+  The camelCase is a fun nod at other programmers,
+  
+  or people who understand, that this game was created using mainly JavaScript.
+
+### Game description
+
+![Game description](documentation/images-readme/game-description.png)
+
+- A brief description of how the game is played.
+  
+  This will be useful for new players, to quickly understand how the game is played,
+
+  without being overbearing with information.
 
 ### Start button
 
