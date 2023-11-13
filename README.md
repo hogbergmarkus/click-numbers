@@ -204,7 +204,7 @@ This is useful for people playing with a mouse, as a helpful visual cue.
   
   Easy way for the player to see that they clicked the incorrect number.
 
-- If clicked wile no game is running, an alert will prompt you to start a game.
+- If clicked while no game is running, an alert will prompt you to start a game.
   
   Helps users to understand that the start and reset buttons must be used.
 
@@ -221,7 +221,7 @@ This is useful for people playing with a mouse, as a helpful visual cue.
   
   Useful to the player so they know how fast they completed the current game.
 
-- Resets when reset button us pressed.
+- Resets when reset button is pressed.
   
   Easy for the user that one button resets everything relevant between games.
 
@@ -234,7 +234,7 @@ This is useful for people playing with a mouse, as a helpful visual cue.
   Now the player will have a time to compete against, which should be a fun
   game mechanic.
 
-- The best time feature will look at the time on the timer when game is completed,
+- The best time feature will look at the value on the timer when game is completed,
   
   and if you beat your previous time, it will log your new best time to the screen.
 
@@ -309,7 +309,7 @@ HTML was validated using [W3C Markup Validation Service](https://validator.w3.or
 with no errors or warnings.
 
 CSS was validated using [W3C CSS Validation Service (Jigsaw)](https://jigsaw.w3.org/css-validator/#validate_by_input)
-with no errors or warnings
+with no errors or warnings.
 
 ### Lighthouse report
 
@@ -323,9 +323,9 @@ The game was developed with a mobile first approach, but also works well on larg
 
 With the layout I have created, and how I have sized the elements using CSS,
 
-There is currently no need for media queries.
+there is currently no need for media queries.
 
-During development I used These divices mainly for testing:
+During development I mainly used these devices for testing:
 
 - Samsung Galaxy Fold
 - Iphone 12 Pro
@@ -492,4 +492,4 @@ There are currently no bugs unfixed that I am aware of.
 
 - I created my favicon using this website [favicon.io](https://favicon.io/)
 
-- The am I responsive image was created using this website [am I responsive](https://ui.dev/amiresponsive)
+- The "am I responsive" image was created using this website [am I responsive](https://ui.dev/amiresponsive)
