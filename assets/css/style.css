@@ -1,62 +1,247 @@
 /* Styles for Body */
 body {
-    background-color: rgb(40, 40, 40);
-    color: rgb(233, 229, 215);
-    text-align: center;
-    font-size: larger;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    align-items: center;
-    font-family: "Playpen Sans", "Lato";
+  background-color: rgb(40, 40, 40);
+  color: rgb(233, 229, 215);
+  text-align: center;
+  font-size: larger;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  align-items: center;
+  font-family: "Playpen Sans", "Lato";
 }
 
 /* Style for headings */
 h2 {
-    font-size: smaller;
-    margin-bottom: 20px;
+  font-size: smaller;
+  margin-bottom: 20px;
+}
+
+/* Mode selector styling */
+#mode-selector {
+  margin: 30px 0;
+}
+
+.mode-buttons {
+  display: flex;
+  gap: 40px;
+  justify-content: center;
+  margin-top: 15px;
+  flex-wrap: wrap;
+}
+
+.mode-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 15px;
+}
+
+.mode-button {
+  padding: 10px 20px;
+  font-size: large;
+  background-color: rgb(60, 60, 60);
+  color: rgb(233, 229, 215);
+  border: 2px solid rgb(100, 100, 100);
+  cursor: pointer;
+  border-radius: 5px;
+  transition: all 0.3s;
+  width: 150px;
+}
+
+.mode-button:hover {
+  background-color: rgb(80, 80, 80);
+  border-color: rgb(150, 150, 150);
+}
+
+.mode-button.active {
+  background-color: rgb(0, 110, 0);
+  border-color: rgb(0, 180, 0);
+}
+
+.mode-preview {
+  width: 150px;
+  height: 150px;
+  border: 2px solid rgb(100, 100, 100);
+  border-radius: 5px;
+  background-color: rgb(30, 30, 30);
+  padding: 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.mode-preview p {
+  font-size: 0.9em;
+  color: rgb(200, 200, 200);
+  text-align: center;
+  margin: 0;
+}
+
+.mode-preview-numbers {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.mode-preview-number {
+  background-color: rgb(70, 70, 70);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 3px;
+  font-size: 0.7em;
+  font-weight: bold;
+  color: rgb(200, 200, 200);
+}
+
+.mode-preview-colors {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 4px;
+  width: 100%;
+  height: 100%;
+}
+
+.mode-preview-color {
+  border-radius: 3px;
 }
 
 /* Styles for numbers divs in the game area */
 .numbers-game-div {
-    max-width: 660px;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    flex-direction: row;
-    margin: 10px 0px;
+  max-width: 660px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  flex-direction: row;
+  margin: 10px 0px;
 }
 
 .number-div {
-    min-width: 17%;
-    padding: 10px 5px;
-    margin: 5px;
-    cursor: pointer;
+  min-width: 17%;
+  aspect-ratio: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 10px 5px;
+  margin: 5px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1.2em;
 }
 
 /* Styles for start and reset buttons */
 .game-button {
-    font-size: x-large;
+  font-size: x-large;
 }
 
 .start-button:hover {
-    background-color: rgb(0, 110, 0);
+  background-color: rgb(0, 110, 0);
 }
 
 .start-button {
-    margin-right: 8%;
-    padding: 5px 15px;
-    background-color: rgb(0, 48, 0);
-    color: rgb(239, 238, 231);
+  margin-right: 8%;
+  padding: 5px 15px;
+  background-color: rgb(0, 48, 0);
+  color: rgb(239, 238, 231);
 }
 
 .reset-button:hover {
-    background-color: rgb(167, 0, 33);
+  background-color: rgb(167, 0, 33);
 }
 
 .reset-button {
-    margin-left: 8%;
-    padding: 5px 15px;
-    background-color: rgb(106, 0, 21);
-    color: rgb(239, 238, 231);
+  margin-left: 8%;
+  padding: 5px 15px;
+  background-color: rgb(106, 0, 21);
+  color: rgb(239, 238, 231);
+}
+
+#back-button-container {
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.back-button:hover {
+  background-color: rgb(100, 100, 100);
+}
+
+.back-button {
+  margin-left: 8%;
+  padding: 5px 10px;
+  font-size: medium;
+  background-color: rgb(70, 70, 70);
+  color: rgb(239, 238, 231);
+}
+
+/* Modal Styling */
+.modal-overlay {
+  display: none;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7);
+  z-index: 999;
+}
+
+.modal {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 1000;
+  width: 90%;
+  max-width: 400px;
+}
+
+.modal-content {
+  background-color: rgb(60, 60, 60);
+  border: 3px solid rgb(0, 110, 0);
+  border-radius: 10px;
+  padding: 30px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.5);
+  text-align: center;
+}
+
+.modal-content h2 {
+  color: rgb(0, 200, 0);
+  font-size: 1.5em;
+  margin-bottom: 15px;
+}
+
+.modal-content p {
+  color: rgb(233, 229, 215);
+  font-size: 1.1em;
+  margin-bottom: 20px;
+  line-height: 1.5;
+}
+
+.modal-button {
+  padding: 10px 30px;
+  font-size: large;
+  background-color: rgb(0, 110, 0);
+  color: rgb(239, 238, 231);
+  border: 2px solid rgb(0, 180, 0);
+  border-radius: 5px;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+
+.modal-button:hover {
+  background-color: rgb(0, 150, 0);
+  box-shadow: 0 0 10px rgba(0, 180, 0, 0.5);
+}
+
+.modal.show {
+  display: block;
+}
+
+.modal-overlay.show {
+  display: block;
 }

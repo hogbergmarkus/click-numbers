@@ -1,46 +1,46 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <!-- Meta tags for search engines -->
     <meta
       name="description"
       content="clickNumbers. Play a fun and interactive numbers game, beat your own time."
-    >
+    />
     <meta
       name="keywords"
       content="clickNumbers, game, numbers, numbers game, timer game, interactive"
-    >
+    />
     <!-- Favicon -->
     <link
       rel="apple-touch-icon"
       sizes="180x180"
       href="assets/favicon/apple-touch-icon.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="32x32"
       href="assets/favicon/favicon-32x32.png"
-    >
+    />
     <link
       rel="icon"
       type="image/png"
       sizes="16x16"
       href="assets/favicon/favicon-16x16.png"
-    >
-    <link rel="manifest" href="/site.webmanifest">
+    />
+    <link rel="manifest" href="/site.webmanifest" />
     <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@300;400;700&family=Playpen+Sans:wght@200;400;700&display=swap"
       rel="stylesheet"
-    >
+    />
     <!-- Stylesheet -->
-    <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/style.css" />
     <!-- Title -->
     <title>clickNumbers</title>
   </head>
@@ -48,10 +48,122 @@
   <body>
     <!-- Header -->
     <h1>clickNumbers</h1>
+    <!-- Back button for returning to mode selector -->
+    <div id="back-button-container" style="display: none">
+      <button class="game-button back-button" id="back-button" data-type="back">
+        Back to Menu
+      </button>
+    </div>
+    <!-- Game Mode Selector -->
+    <section id="mode-selector">
+      <h2>Choose Game Mode</h2>
+      <div class="mode-buttons">
+        <div class="mode-card">
+          <button class="mode-button" id="numbers-mode" data-mode="numbers">
+            Numbers
+          </button>
+          <div class="mode-preview">
+            <div class="mode-preview-numbers">
+              <div class="mode-preview-number">1</div>
+              <div class="mode-preview-number">2</div>
+              <div class="mode-preview-number">3</div>
+              <div class="mode-preview-number">4</div>
+              <div class="mode-preview-number">5</div>
+              <div class="mode-preview-number">6</div>
+              <div class="mode-preview-number">7</div>
+              <div class="mode-preview-number">8</div>
+              <div class="mode-preview-number">9</div>
+              <div class="mode-preview-number">10</div>
+              <div class="mode-preview-number">11</div>
+              <div class="mode-preview-number">12</div>
+              <div class="mode-preview-number">13</div>
+              <div class="mode-preview-number">14</div>
+              <div class="mode-preview-number">15</div>
+              <div class="mode-preview-number">16</div>
+            </div>
+          </div>
+        </div>
+        <div class="mode-card">
+          <button class="mode-button" id="colors-mode" data-mode="colors">
+            Colors
+          </button>
+          <div class="mode-preview">
+            <div class="mode-preview-colors">
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(255, 255, 255)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(238, 238, 238)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(221, 221, 221)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(204, 204, 204)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(187, 187, 187)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(170, 170, 170)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(153, 153, 153)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(136, 136, 136)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(119, 119, 119)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(102, 102, 102)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(85, 85, 85)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(68, 68, 68)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(51, 51, 51)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(34, 34, 34)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(17, 17, 17)"
+              ></div>
+              <div
+                class="mode-preview-color"
+                style="background-color: rgb(0, 0, 0)"
+              ></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
     <!-- Game area -->
-    <section>
-      <h2>Hit the numbers 1-16 in order, as fast as you can!</h2>
-      <!-- Start and Reset buttons -->
+    <section id="game-section" style="display: none">
+      <h2 id="game-title">
+        Hit the numbers 1-16 in order, as fast as you can!
+      </h2>
+      <!-- Start, Reset, and Back buttons -->
       <div class="button-div">
         <span class="button-span">
           <button
@@ -93,6 +205,16 @@
       <p id="timer">Timer: 0</p>
       <p id="best-time">Your best time: 0</p>
     </section>
+    <!-- Modal Overlay -->
+    <div id="modal-overlay" class="modal-overlay"></div>
+    <!-- Modal Container -->
+    <div id="modal" class="modal">
+      <div class="modal-content">
+        <h2 id="modal-title">Message</h2>
+        <p id="modal-message">This is a message</p>
+        <button id="modal-button" class="modal-button">OK</button>
+      </div>
+    </div>
     <!-- JavaScript -->
     <script src="assets/js/script.js"></script>
   </body>
